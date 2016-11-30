@@ -68,8 +68,7 @@ class Type_1(BottleNumber):
         return "it"
     def container(self):
         return "bottle"
-class Type_6(BottleNumber):
-    
+class Type_6(BottleNumber):   
     def container(self):
         return "six_pack"
     def quantity(self):
