@@ -1,3 +1,4 @@
+from container import CONTAINER_NUMBER
 class Bottles:
 
     def song(self):
@@ -16,26 +17,10 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
 """		
         else:
            return """{0} {1} of beer on the wall, {0} {1} of beer.
-Take {3} down and pass it around, {2} """.format(number,self.container(number), self.no_more(number-1),self.only(number)) + """{0} of beer on the wall.
-""".format(self.container(number-1))
+Take {3} down and pass it around, {2} """.format(number,CONTAINER_NUMBER().container(number), CONTAINER_NUMBER().no_more(number-1),CONTAINER_NUMBER().it_one(number)) + """{0} of beer on the wall.
+""".format(CONTAINER_NUMBER().container(number-1))
     
-    def container(self,number):
-        if number == 1:
-            return "bottle"
-        else:
-            return "bottles"
-
-    def no_more(self,number):
-        if number == 0:
-            return "no more"
-        else:
-            return number
-
-    def only(self, number):
-        if number == 1:
-            return "it"
-        else:
-            return "one"
+    
 
 
 
