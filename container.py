@@ -1,20 +1,22 @@
 class   CONTAINER_NUMBER:
 
+    def __init__(self,number):
+        self.number = number
     
-    def container(self,number):
-        if number == 1:
+    def container(self):
+        if self.number == 1:
             return "bottle"
         else:
             return "bottles"
 
-    def no_more(self,number):
-        if number == 0:
+    def no_more(self):
+        if self.number == 0:
             return "no more"
         else:
-            return number
+            return self.number
 
-    def it_one(self, number):
-        if number == 1:
+    def it_one(self):
+        if self.number == 1:
             return "it"
         else:
             return "one"
