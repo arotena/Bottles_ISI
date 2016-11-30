@@ -24,11 +24,13 @@ Take {3} down and pass it around, {2} """.format(number,self.container(number), 
             return "bottle"
         else:
             return "bottles"
+
     def no_more(self,number):
         if number == 0:
             return "no more"
         else:
             return number
+
     def only(self, number):
         if number == 1:
             return "it"
